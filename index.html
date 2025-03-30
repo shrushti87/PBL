@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Password Manager</h1>
+    </header>
+
+    <main>
+        <section id="add-password">
+            <h2>Add a New Password</h2>
+            <form id="password-form">
+                <label for="account">Account:</label>
+                <input type="text" id="account" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                
+                <button type="submit">Save Password</button>
+            </form>
+        </section>
+
+        <section id="retrieve-password">
+            <h2>Retrieve Password</h2>
+            <label for="retrieve-account">Enter Account Name:</label>
+            <input type="text" id="retrieve-account" required>
+            <button onclick="retrievePassword()">Retrieve</button>
+            
+            <p id="retrieved-password"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Password Manager</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
